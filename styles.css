@@ -16,8 +16,8 @@ img {
     max-width: 100%;
     width: 400px;
     height: auto;
-    height: 400px;
-    max-height: 300px;
+    height: 500px;
+    max-height: 400px;
 }
 
 .links {
@@ -38,7 +38,7 @@ button {
     background-color: #3882f6;
     border-radius: 8px;
     padding: 5px 10px;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     font-weight: bolder;
 }
@@ -59,13 +59,27 @@ button {
 
 .box1, .box2 {
     display: flex;
-    gap: 20px;
+    gap: 10px; 
     width: 900px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
-    border: 3px solid firebrick
+    padding: 10px;
+    box-sizing: border-box;
+/*  border: 3px solid firebrick */
+}
+
+.box1 {
+    gap: 30px;
+}
+
+.box2 {
+    gap: 30px;
+}
+
+.main-header, .para, .button-book {
+    margin-bottom: 10px;
 }
 
 .text-img {
@@ -74,12 +88,10 @@ button {
     flex-wrap: wrap;
 }
 
-.box2 {
+/*.box2 {
     justify-content: unset;
     gap: 48px;
-}
-
-
+} */
 
 @media (max-width: 907px) {
     .box1, .box2 {
@@ -101,9 +113,11 @@ button {
 
     .button-book {
         margin: 0 auto;
+        padding-top: 20px;
     }
 
     img {
         width: 100%;
+        padding-bottom: 10px;
     }
 }

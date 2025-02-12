@@ -122,6 +122,7 @@ button {
 .item > img {
     width: 150px;
     height: 150px;
+    border: 3px solid blue;
     border-radius: 20px;
 } 
 
@@ -239,10 +240,6 @@ p.quote {
         align-items: center;
     }
 
-    .item {
-        flex: 1;
-    }
-    
     .author {
         text-align: end;
     }
